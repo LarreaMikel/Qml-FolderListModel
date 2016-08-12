@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Qml-FolderListModel
+Exec=qmlscene %U Qml-FolderListModel/Main.qml
+Icon=Qml-FolderListModel/Qml-FolderListModel.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+

@@ -1,0 +1,17 @@
+{
+    "name": "qml-folderlistmodel.larreamikel",
+    "description": "description of Qml-FolderListModel",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Qml-FolderListModel",
+    "hooks": {
+        "Qml-FolderListModel": {
+            "apparmor": "Qml-FolderListModel/Qml-FolderListModel.apparmor",
+            "desktop":  "Qml-FolderListModel/Qml-FolderListModel.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Mikel Larrea <developer@larreamikel.com>",
+    "framework" : "ubuntu-sdk-15.04.6"
+}
+
+
