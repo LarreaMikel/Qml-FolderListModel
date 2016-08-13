@@ -37,15 +37,24 @@ MainView {
             }
             FolderListModel {
                 id: folderModel
-                nameFilters: ["*.qml"]
+                //nameFilters: ["*.qml"] //si no existen ficheros de ese tipo no aparece nada.
             }
             Component {
                 id: fileDelegate
-                Text { text: fileName }
+                Item {
+                          width: units.gu(50); height: units.gu(10)
+                          Column {
+                              Text { text: '<b>file name:</b> ' + fileName }
+                              Text { text: '<b>url:</b> ' +  folderModel.folder }
+                          }
+                      }
             }
             model: folderModel
             delegate: fileDelegate
         }
     }
 }
+
+
+
 
